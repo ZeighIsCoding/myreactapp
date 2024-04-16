@@ -37,18 +37,18 @@ class App extends React.Component {
               <div className="container">
                 {items.map((item) => (
                   <div className="item">
-                  <ol key={items.id}>
+                  <ol key={item.id}>
                     <div>
                       <strong>
-                        ("User_Name: ")
+                        User_Name:
                       </strong>
-                        (item.username),
+                        {item.username},
                     </div>
                     <div>
-                      Full_Name: {items.name},
+                      Full_Name: {item.name},
                     </div>
                     <div>
-                      User_Email: (item.email)
+                      User_Email:{item.email}
                     </div>
                   </ol>
               </div>
