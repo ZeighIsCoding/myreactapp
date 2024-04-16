@@ -33,9 +33,30 @@ class App extends React.Component {
         return (
             <div className="App">
               <h1 className="geeks">G4G</h1>
+              <h3>Fetch data from an api in react</h3>
+              <div className="container">
+                {items.map((item) => (
+                  <div className="item">
+                  <ol key={items.id}>
+                    <div>
+                      <strong>
+                        ("User_Name: ")
+                      </strong>
+                        (item.username),
+                    </div>
+                    <div>
+                      Full_Name: {items.name},
+                    </div>
+                    <div>
+                      User_Email: (item.email)
+                    </div>
+                  </ol>
+              </div>
+                ))}
             </div>
-        )
-
+            </div>
+        );
+    }
   }
 
 
